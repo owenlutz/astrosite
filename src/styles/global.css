@@ -33,12 +33,21 @@ h1 {
   font-size: 2.5rem;
 }
 
+/* main title styles*/
+.main-title{
+   position: fixed;
+    top: 0px;
+    left: 5px;
+    opacity: .5;
+}
+
 /* nav styles */
 
 .nav-links {
   width: 100%;
-  display: none;
+  display: flex;
   margin: 0;
+  align-items: center; 
 }
 
 .nav-links a {

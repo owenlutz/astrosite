@@ -5,7 +5,9 @@ const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: 
 const pageTitle = "My Astro Learning Blog"
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
+  <p>I'm Owen, a software dev and photographer based in San Luis Obispo. I update this site regularly
+    with articles, photos, and project updates. Thanks for visiting!
+  </p>
   <ul>
     {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul>
