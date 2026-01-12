@@ -2,12 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
 const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
-const pageTitle = "My Astro Learning Blog"
+const pageTitle = "My Astro Learning Blog";
+
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <p>I'm Owen, a software dev and photographer based in San Luis Obispo. I update this site regularly
-    with articles, photos, and project updates. Thanks for visiting!
-  </p>
+ 
+    <h3>Featured article:</h3>
+
+    
+
   <ul>
     {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul>

@@ -1,7 +1,7 @@
 ---
 import Menu from '../components/Menu.astro';
 import Navigation from '../components/Navigation.astro';
-import Sitetitle from '../components/sitetitle.astro';
+import Sitetitle from '../components/SiteTitle.astro';
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 import Footer from '../components/Footer.astro';
@@ -16,13 +16,15 @@ import Footer from '../components/Footer.astro';
 		<title>Astro</title>
 	</head>
 	<body>
-		<Sitetitle/>
-		<Menu/>
-		<Navigation/>
-        <slot />
+		<div class="content-wrapper">
+			<Menu/>
+			<Navigation/>
+        	<slot />
+			<script src="../scripts/menu.js"></script>
+			<script src="../scripts/highlightmenu.js"></script>	
+		</div>
 		<Footer/>
-	<script>
-		import "../scripts/menu.js";
-	</script>
+		
+		
 	</body>
 </html>

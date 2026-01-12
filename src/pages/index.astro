@@ -4,9 +4,17 @@ const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Hello.</h2>
+  
   <p>This is my website. There are photos, articles, and project descriptions. 
     You can find my information on the contact page. </p>
+    <script>
+    const menu = document.querySelector('.menu');
+
+    menu?.addEventListener('click', () => {
+      const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+      menu.setAttribute('aria-expanded', `${!isExpanded}`);
+    });
+  </script>
 </BaseLayout>
 
 

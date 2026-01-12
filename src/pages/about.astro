@@ -17,24 +17,12 @@ const goal = 3;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>About!</h2>
-  <p>I'm Owen, a software dev and photographer based in San Luis Obispo. I update this site regularly
-    with articles, photos, and project updates. Thanks for visiting!</p>
-  <p>Here are a few facts about me:</p>
-<ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-  }
-</ul>
-<p>My skills are:</p>
-<ul>
-  {skills.map((skill) => <li class="skill">{skill}</li>)}
-</ul>
-{happy && <p>I am happy to be learning Astro!</p>}
 
-{finished && <p>I finished this tutorial!</p>}
+  <p>I'm a software developer and photographer based in San Luis Obispo. My resume is below.</p>
+  <p>Statement on Generative AI: While useful, I belive that generative AI is fundamentally incompatible 
+    with the best practices for effective learning, and as such, no content on this site, whether it be software, writing, 
+    or other art forms, was produced using generative AI. Seriously. Go check out my long winded blog post 
+    on why I beleive this.
+  </p>
 
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>

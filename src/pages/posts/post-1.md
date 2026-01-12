@@ -1,9 +1,9 @@
 ---
-title: 'My First Blog Post'
-pubDate: 2022-07-01
+title: 'Should you use Astro?'
+pubDate: 2025-07-01
 subTitle: 'Welcome to my new blog about learning Astro! Here, I will share my learning journey as I build a new website.'
-description: 'This is the first post of my new Astro blog.'
-author: 'otl'
+description: 'Opinons on using astro'
+author: 'Owen Lutz'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
@@ -12,7 +12,7 @@ tags: ["astro", "blogging", "learning in public"]
 layout: ../../layouts/MarkdownPostLayout.astro
 ---
 
-## What I've accomplished
+## What I've accomplisheds
 
 1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 
