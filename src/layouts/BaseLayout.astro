@@ -15,10 +15,15 @@ import Footer from '../components/Footer.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
+	<header class="header">
+		<div class="header-content">
+			<Sitetitle/>
+			<Navigation/>
+		</div>
+	</header>
 	<body>
 		<div class="content-wrapper">
 			<Menu/>
-			<Navigation/>
         	<slot />
 			<script src="../scripts/menu.js"></script>
 			<script src="../scripts/highlightmenu.js"></script>	

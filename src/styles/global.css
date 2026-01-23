@@ -2,6 +2,24 @@ html {
   background-color: #f1f5f9;
   font-family: sans-serif;
 }
+
+/* Header layout */
+.header {
+  width: 100%;
+  background-color: #f1f5f9;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  gap: 10rem;
+}
+
 .menu {
   background-color: #0d0950;
   border: none;
@@ -18,11 +36,12 @@ html {
   }
 body {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   min-height: 100vh; 
   flex-direction: column;
   width: 100%;
-  max-width: 80ch;
+  max-width: 120ch;
   padding: 1rem;
   line-height: 1.5;
 }
@@ -43,32 +62,34 @@ h1 {
 
 /* main title styles*/
 .main-title{
-   position: fixed;
-    top: 0px;
-    left: 5px;
-    opacity: .5;
+   opacity: .5;
 }
 
 /* nav styles */
 
 .nav-links {
-  width: 100%;
   display: flex;
   margin: 0;
-  justify-content: center ;
+  justify-content: flex-end;
   align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 .nav-links a {
-  display: flex;
-  justify-content: center ;
-  
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #0d0950;
+  cursor: pointer;
+  text-decoration: none; /* For links */
+  display: inline-flex; /* Align icon and text */
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover,
@@ -81,9 +102,8 @@ h1 {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
-    margin-bottom: 5em;
-    display: block;
+    margin: 0;
+    display: flex;
     position: static;
     width: auto;
     background: none;
@@ -104,14 +124,15 @@ h1 {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(2, 2fr);
     gap: 1rem;
+    padding: 1rem;
   }
   .image-grid img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
+    object-fit: cover; 
   }
 
 
@@ -151,3 +172,30 @@ footer {
   margin-top: 2rem;
   height: 100px
   }
+
+/* Tag filters */
+.tag-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.tag-filters a {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.tag-filters a:hover {
+  background-color: #d0d0d0;
+}
+
+.tag-filters a.active {
+  background-color: #ff9776;
+  color: #fff;
+}

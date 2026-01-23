@@ -3,17 +3,12 @@ import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
+  <article class="post" data-tags={frontmatter.tags}>
   <h2>{frontmatter.title}</h2>
-
   <slot />
-  <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
-
+  <p>{frontmatter.pubDate.toLocaleDateString()}</p>
   <p>Written by: {frontmatter.author}</p>
-
-
-
-
-  
+  </article>
 </BaseLayout>
 <style>
   a {

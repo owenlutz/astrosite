@@ -9,8 +9,8 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 
-layout: ../../layouts/MarkdownPostLayout.astro
 ---
+  <article class="post" data-tags={frontmatter.tags}>
 
 ## What I've accomplisheds
 
@@ -23,3 +23,5 @@ layout: ../../layouts/MarkdownPostLayout.astro
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+
+</article>
