@@ -9,7 +9,7 @@ const allPosts = await getCollection("blog");
 <BaseLayout pageTitle={pageTitle}>
   <ul>
     <h2>The Blog</h2>
-    <p>Some scattered thoughts on bikes, cameras, and software. Occasionally worth reading.</p>
+    <p>Some scattered thoughts on bikes, cameras, and software.</p>
     {
       allPosts.map((post) => (
         <BlogPost url={`/posts/${post.id}/`} title={post.data.title} />
