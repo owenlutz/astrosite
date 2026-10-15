@@ -20,7 +20,7 @@ const galleryImages = Object.entries(images).map(([path, module]) => ({
     {galleryImages.map(({ path, image }, index) => (
       <Image
         src={image}
-        alt={path.split("/").pop() || "Gallery image"}
+        alt=""
         width={1200}
         class="viewer-image"
         hidden={index !== 0}
