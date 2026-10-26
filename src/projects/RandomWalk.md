@@ -6,11 +6,10 @@ description: Bioinformatics Project Brief
 author: Owen Lutz
 tags: ["bio","projects"]
 image: 
-    url: ../assets/bitcoinlogo.png
+    url: /bitcoinlogo.png
     alt: "bitcoin logo"
-
-
 ---
+
 
 A recent paper that I completed addressed the application of random walks in the field of cancer genomics, applying the lens of graph theory to try and identify cancer driven genes. While this paper has some issues that I will point out, it is overall a good exploration of graphs and random walks.
 
