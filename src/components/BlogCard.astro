@@ -1,0 +1,83 @@
+---
+import { date } from 'astro:schema';
+
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  image: {
+    url: string;
+    alt: string;
+  };
+  pubDate: Date;
+}
+
+const { title, description, href, image, pubDate } = Astro.props;
+---
+
+<article class="blog-card">
+  <a class="image-link" href={href}>
+    <img src={image.url} alt={image.alt} />
+  </a>
+
+  <div class="content">
+    <h2>
+      <a href={href}>{title}</a>
+    </h2>
+
+    <p>{description}</p>
+    <p>{pubDate.toLocaleDateString()}</p>
+
+  </div>
+
+
+</article>
+
+<style>
+  .blog-card {
+    overflow: hidden;
+    background: #f1f5f9;
+  }
+
+  .image-link {
+    display: block;
+  }
+
+  .image-link img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+
+  h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.4rem;
+  }
+
+  h2 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h2 a:hover,
+  h2 a:focus,
+  .read-more:hover,
+  .read-more:focus {
+    text-decoration: underline;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    line-height: 1.6;
+  }
+
+  .read-more {
+    color: inherit;
+    font-weight: bold;
+  }
+</style>

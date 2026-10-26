@@ -6,7 +6,7 @@ description: A rant about bitcoin
 author: Owen Lutz
 tags: ["bitcoin","media"]
 image: 
-    url: ../assets/bitcoinlogo.png
+    url: /bitcoinlogo.png
     alt: "bitcoin logo"
 ---
 
