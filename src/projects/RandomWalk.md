@@ -6,8 +6,8 @@ description: Bioinformatics Project Brief
 author: Owen Lutz
 tags: ["bio","projects"]
 image: 
-    url: /bitcoinlogo.png
-    alt: "bitcoin logo"
+    url: /rw.png
+    alt: "Random walk example"
 ---
 
 

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector(".nav-links");
     const navLinks = document.querySelectorAll(".nav-links a");
     const blogLink = document.querySelector(".blogLink");
+    const projLink = document.querySelector(".projLink");
 
     let activeLink = null;
 
@@ -15,9 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    if (currentPathname.includes("/post/")) {
+    if (currentPathname.includes("/posts/")) {
         blogLink.classList.add("current");
         activeLink = blogLink;
+    }
+    else if (currentPathname.includes("/project/")) {
+        projLink.classList.add("current");
+        activeLink = projLink;
     }
 
     // Click the visible/current link to open or close the menu.

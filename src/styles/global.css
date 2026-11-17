@@ -12,6 +12,11 @@ html {
   margin-bottom: 2rem;
 }
 
+/* i think this is overridden somwhere ...*/
+.bikeintro {
+  width: 100%;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -59,6 +64,10 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  text-align: center;
+}
+h2 {
+  text-align: center;
 }
 
 /* main title styles*/

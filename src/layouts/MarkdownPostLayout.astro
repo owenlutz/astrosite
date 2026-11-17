@@ -7,7 +7,6 @@ const { frontmatter } = Astro.props;
   <h2>{frontmatter.title}</h2>
   <slot />
   <p>{frontmatter.pubDate.toLocaleDateString()}</p>
-  <p>Written by: {frontmatter.author}</p>
   </article>
 </BaseLayout>
 <style>
@@ -28,4 +27,9 @@ const { frontmatter } = Astro.props;
     font-size: 1.15em;
     background-color: #F8FCFD;
   }
+  .post {
+    width: 80%;
+    margin-inline: auto;
+  }
+  
 </style>
