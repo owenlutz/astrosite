@@ -25,13 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activeLink = projLink;
     }
 
-    // Click the visible/current link to open or close the menu.
-    activeLink?.addEventListener("click", (event) => {
-        if (window.innerWidth <= 768) {
-            event.preventDefault();
-            nav.classList.toggle("is-open");
-        }
-    });
+
 
     // Click anywhere outside the navigation to close it.
     document.addEventListener("click", (event) => {

@@ -1,9 +1,14 @@
 ---
+import Menu from './Menu.astro';
 ---
-<div id="main-menu" class="nav-links">
-  <a href="/">Home</a>
-  <a href="/about/">Resume</a>
-  <a href="/projects/" class="projLink">Projects</a>
-  <a href="/algo_otw/" class="blogLink">Blog</a>
-  <a href="/photos/">Gallery</a>
-</div>
+
+<nav class="site-navigation" aria-label="Main navigation">
+  <Menu />
+  <div id="main-menu" class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about/">Resume</a>
+    <a href="/projects/" class="projLink">Projects</a>
+    <a href="/algo_otw/" class="blogLink">Blog</a>
+    <a href="/photos/">Gallery</a>
+  </div>
+</nav>
